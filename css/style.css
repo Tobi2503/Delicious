@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Qwitcher+Grypen:wght@400;700&display=swap');
+
+.font-style-qwitcher {
+    font-family: "Qwitcher Grypen", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.tab-focus:focus {
+    color: orange !important;
+    ;
+}
+.bg-brown{
+    background-color: #1E160D !important;
+}
+.focus:focus{
+    border: solid 1px orange !important;;
+}
+.hover-gallary{
+    overflow: hidden;
+}
+.image-gallary{
+    transition: 0.8s;
+    object-fit: cover;
+    height: 100% !important; 
+    width: 100% !important; 
+}
+.hover-icon{
+    transition: .3s !important;
+}
+.hover-icon:hover{
+    color: orange !important;;
+}
+img{
+    object-fit: cover;
+    width: 100% !important;
+    height: 100% !important;	
+}
+.image-gallary:hover{
+    transform: scale(1.2);
+}
+
+swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.autoplay-progress {
+    position: absolute;
+    right: 16px;
+    bottom: 16px;
+    z-index: 10;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.autoplay-progress svg {
+    --progress: 0;
+    position: absolute;
+    left: 0;
+    top: 0px;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    stroke-width: 4px;
+    stroke: var(--swiper-theme-color);
+    fill: none;
+    stroke-dashoffset: calc(125.6px * (1 - var(--progress)));
+    stroke-dasharray: 125.6;
+    transform: rotate(-90deg);
+}                
